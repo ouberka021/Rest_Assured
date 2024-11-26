@@ -1,22 +1,20 @@
 package com.cydeo.day03;
 
-import com.cydeo.Utilities.BaseUtils;
+import com.cydeo.Utilities.SpartanTestBase;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class P01_spartanWithParameters extends BaseUtils {
+public class P01_spartanWithParameters extends SpartanTestBase {
 
 //String url = "http://18.209.59.60:8000";
 

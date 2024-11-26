@@ -1,14 +1,10 @@
 package com.cydeo.Utilities;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
-import java.io.IOException;
-
-public abstract class BaseUtils {
+public abstract class SpartanTestBase {
 
     @BeforeAll
     public static void init() {
