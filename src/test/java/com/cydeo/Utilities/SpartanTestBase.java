@@ -16,6 +16,7 @@ public abstract class SpartanTestBase {
     }
 
 
+
     @AfterAll
     public static void teardown() {
         // RestAssured.reset() is used to reset the RestAssured context after each test method.
