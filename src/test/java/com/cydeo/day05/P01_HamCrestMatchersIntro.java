@@ -80,8 +80,12 @@ public class P01_HamCrestMatchersIntro {
         assertThat(numberList, hasItems(33, 44));
         // how to check 33,3 and 44 are into the collection in any order
         assertThat(numberList, hasItems(3,33,44));
-        //
+       //Loop through each of the element and make sure they are matching with Matchers inside the everyItem
         assertThat(numberList,everyItem(greaterThanOrEqualTo(1)));
+        //the values matching with ordering exp 1234 ----> 1234
+        assertThat(numberList,containsInRelativeOrder(1, 2, 3,33,44,55));
+        assertThat(numberList,containsInRelativeOrder(1, 2,3));// I can us three numbers instead of 6
+      assertThat(numberList,containsInAnyOrder(55,1,2,3,33,44));// the value position might be different
 
 
 
